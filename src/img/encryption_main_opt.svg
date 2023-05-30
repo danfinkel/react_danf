@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="SVGRoot" width="204mm" height="83mm" version="1.1" viewBox="0 0 204 83" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="marker24986" overflow="visible" markerHeight="5.9304953" markerWidth="6.1347523" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 6.1347524 5.9304951">
+   <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="RoundedArrow" overflow="visible" markerHeight="5.9304948" markerWidth="6.1347523" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 6.1347524 5.9304951">
+   <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="RoundedArrow-8" overflow="visible" markerHeight="5.9304948" markerWidth="6.1347523" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 6.1347524 5.9304951">
+   <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="marker24986-7" overflow="visible" markerHeight="5.9304953" markerWidth="6.1347523" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 6.1347524 5.9304951">
+   <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="RoundedArrow-3" overflow="visible" markerHeight="5.9304948" markerWidth="6.1347523" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 6.1347524 5.9304951">
+   <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="marker24986-3" overflow="visible" markerHeight="5.9304953" markerWidth="6.1347523" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 6.1347524 5.9304951">
+   <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="RoundedArrow-8-7" overflow="visible" markerHeight="5.9304948" markerWidth="6.1347523" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 6.1347524 5.9304951">
+   <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+  <marker id="marker24986-7-1" overflow="visible" markerHeight="5.9304953" markerWidth="6.1347523" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 6.1347524 5.9304951">
+   <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" fill="context-stroke" fill-rule="evenodd"/>
+  </marker>
+ </defs>
+ <path d="m23.829 23.578v45.308h38.898v-36.909l-8.509-8.509z" fill="#aef" stroke="#006680" stroke-width="1.465"/>
+ <path d="m142.87 23.776v45.308h38.898v-36.909l-8.509-8.509z" fill="#aef" stroke="#006680" stroke-width="1.465"/>
+ <g fill="#d5f6ff">
+  <path d="m53.823 24.502 8.4599 8.0638h-8.5862v-7.9358h-0.75761"/>
+  <path d="m172.51 24.111 8.4599 8.0638h-8.5862v-7.9358h-0.75761"/>
+  <path d="m30.668 41.141h23.936"/>
+  <path d="m97.099 42.037-21.888 0.128"/>
+ </g>
+ <g fill="#aef">
+  <path d="m28.658 40.079 27.243-0.0465" stroke="#f2fdff" stroke-width="1.2"/>
+  <path d="m28.658 37.288 27.243-0.0465" stroke="#f2fdff" stroke-width="1.2"/>
+  <g stroke="#3ce1ff" stroke-width=".70123">
+   <path d="m66.895 41.196 13.934-0.03104" marker-end="url(#marker24986)" marker-mid="url(#RoundedArrow)"/>
+   <path d="m83.991 50.28-13.933-0.21877" marker-end="url(#marker24986-7)" marker-mid="url(#RoundedArrow-8)"/>
+   <path d="m123.23 39.949 13.934-0.03104" marker-end="url(#marker24986-3)" marker-mid="url(#RoundedArrow-3)"/>
+   <path d="m140.33 49.034-13.933-0.21877" marker-end="url(#marker24986-7-1)" marker-mid="url(#RoundedArrow-8-7)"/>
+  </g>
+  <g stroke="#f2fdff" stroke-width="1.2">
+   <path d="m28.658 42.87 27.243-0.0465"/>
+   <path d="m28.658 45.662 27.243-0.0465"/>
+   <path d="m28.658 48.453 27.243-0.0465"/>
+   <path d="m28.658 51.244 27.243-0.0465"/>
+   <path d="m28.658 54.035 27.243-0.0465"/>
+   <path d="m28.658 56.827 27.243-0.0465"/>
+   <path d="m28.658 59.618 27.243-0.0465"/>
+  </g>
+ </g>
+ <path d="m148.2 23.707c-0.0328-3.4833 0.92017-6.9705 2.7198-9.953 0.9573-1.5865 2.155-3.0369 3.594-4.2043 1.0682-0.86655 2.2765-1.5785 3.594-1.9734 1.035-0.31025 2.1278-0.42106 3.2055-0.34321 1.7034 0.12305 3.3701 0.72312 4.7597 1.716 1.2985 0.92785 2.34 2.177 3.2055 3.5179 0.88236 1.3669 1.5958 2.8415 2.137 4.3759 0.47018 1.333 0.81127 2.7141 0.97136 4.1185 0.0909 0.79702 0.12337 1.6007 0.0972 2.4024" fill="none" stroke="#005e70" stroke-width="2.5148"/>
+ <g fill="#005d74">
+  <ellipse cx="160.98" cy="41.977" rx="5.6168" ry="4.8072"/>
+  <ellipse cx="159.58" cy="57.108" rx=".86023" ry=".25301"/>
+  <path d="m159.71 45.873-4.453 10.525h12.043l-4.6554-10.626z"/>
+ </g>
+ <g transform="matrix(.64715 0 0 .61778 35.401 1.9839)" stroke="#006375" stroke-width="2.5812">
+  <g fill="#aef">
+   <path d="m98.942 69.274 27.243-0.0465"/>
+   <path d="m115.1 69.183 0.0491 7.6438"/>
+   <path d="m118.63 69.364 0.0497 5.5229"/>
+   <path d="m121.78 69.319 0.0497 5.5229"/>
+  </g>
+  <ellipse cx="90.765" cy="70.269" rx="7.9815" ry="7.8542" fill="none"/>
+ </g>
+</svg>
