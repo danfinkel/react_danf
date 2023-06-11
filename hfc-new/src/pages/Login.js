@@ -3,29 +3,39 @@ import PropTypes from 'prop-types';
 
 
 async function loginUser(credentials) {
- return fetch('http://localhost:3001/login', {
+  return fetch('http://localhost:3001/api/users/login/', {  
    method: 'POST',
    headers: {
-     'Content-Type': 'application/json'
+     'Content-Type': 'application/json',
    },
+   credentials: 'include',
    body: JSON.stringify(credentials)
  })
    .then(data => data.json())
 }
 
 export default function Login({ setToken }) {
-    const [username, setUserName] = useState();
+    const [email, setEmail] = useState();
     const [password, setPassword] = useState();
+    const [alert, setAlert] = useState();
 
     const handleSubmit = async e => {
+      setAlert("")
       e.preventDefault();
-      const token = await loginUser({
-        username,
-        password
-      });
-      console.log(token)
-      setToken(token);
-    }    
+      try {
+          const uname = await loginUser({
+                email,
+                password
+              });
+          console.log(uname)
+          setToken(uname?.userName);
+        }
+      catch (error) {
+        console.log(error)
+        setAlert('Your credentials were not entered correctly. Please try again.')
+        // window.location.href = '/login'
+      }
+    }
 
     return (
         <div className="content">
@@ -33,7 +43,7 @@ export default function Login({ setToken }) {
                 <fieldset>
                     <legend>Sign in for HFC Website</legend>
                     <label htmlFor="stacked-email">Email</label>
-                    <input type="email" id="stacked-email" placeholder="Email" onChange={e => setUserName(e.target.value)}/>
+                    <input type="email" id="stacked-email" placeholder="Email" onChange={e => setEmail(e.target.value)}/>
                     <span className="pure-form-message">This is a required field.</span>
                     <label htmlFor="stacked-password">Password</label>
                     <input type="password" id="stacked-password" placeholder="Password" onChange={e => setPassword(e.target.value)} />
@@ -43,6 +53,7 @@ export default function Login({ setToken }) {
                     <button type="submit" className="pure-button pure-button-primary">Sign in</button>
                 </fieldset>
             </form>
+            <h2>{alert}</h2>
         </div>
         )
 };

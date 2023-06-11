@@ -5,16 +5,28 @@ export default function GetRaces2(props) {
     const [races, setRaces] = useState([])
     const [headers, setHeaders] = useState([])
 
+    // const fetchRacesData = () => {
+    //     fetch('http://localhost:3001/getRaces')
+    //       .then(response => {
+    //         return response.json()
+    //       })
+    //       .then(data => {
+    //         setRaces(data)
+    //         setHeaders(data.fields)
+    //       })
+    //   }
+
     const fetchRacesData = () => {
-        fetch('http://localhost:3001')
+        fetch('http://localhost:3001/api/users/getRaces')
           .then(response => {
             return response.json()
           })
           .then(data => {
-            setRaces(data)
-            setHeaders(data.fields)
+            setRaces(data["races"])
+            setHeaders(data["cols"])
           })
       }
+
 
     useEffect(() => {
         fetchRacesData()
@@ -82,7 +94,7 @@ export default function GetRaces2(props) {
       var additionalRow = props.newRow ? (
           <tr key={props.newRow["id"]}>
           {props.newRow["record"].map((v,idx) => (
-            <td>{v}</td>
+            <td key={v}>{v}</td>
             ))}
           </tr>
         ) : null;
@@ -95,7 +107,8 @@ export default function GetRaces2(props) {
     };
 
     // const myheaders = ["id","race", "race_date", "notes"];
-    const myheaders = headers.map(h => h.name);  
+    // const myheaders = headers.map(h => h.name);  
+    const myheaders = headers;  
     const filteredheaders = myheaders.filter(h => props.race_cols.includes(h))
 
     return (
@@ -103,7 +116,7 @@ export default function GetRaces2(props) {
         <h2 className="content-head">Upcoming Races</h2>
         <table className="pure-race-table pure-race-table-horizontal">
           <RaceHeader headers={filteredheaders} />             
-          <RaceRow races={races.rows} race_cols={filteredheaders} newRow={props.newRow} maxRows={props.maxRows}/>
+          <RaceRow races={races} race_cols={filteredheaders} newRow={props.newRow} maxRows={props.maxRows}/>
         </table>
       </div>
       );

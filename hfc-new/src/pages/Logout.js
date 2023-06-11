@@ -1,8 +1,9 @@
 export default function LogOut({ setToken }) {
 
   const logoutButton = e => {
-      // e.preventDefault();
+      e.preventDefault();
       setToken("")
+      window.location.href = '/'
     }
   
   return (

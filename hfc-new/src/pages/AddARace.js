@@ -9,25 +9,26 @@ export default function AddARace() {
     const [raceDate, setRaceDate] = useState("");
     const [notes, setNotes] = useState("");
     const [message, setMessage] = useState("");
-    const [raceTable, setRaceTable] = useState(<GetRaces2 race_cols={["id", "name", "race_date", "notes"]} maxRows={20} />);
+    const [raceTable, setRaceTable] = useState(<GetRaces2 race_cols={["id", "raceName", "raceDate", "raceNotes"]} maxRows={20} />);
 
     let handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        let res = await fetch("http://localhost:3001/races", {
+        let res = await fetch("http://localhost:3001/api/users/postRace", {
           method: "POST",
            headers: {
                 'Content-Type': 'application/json',
               },
+          credentials : 'include',
           body: JSON.stringify({
-            name: name,
-            race_date: raceDate,
-            notes: notes,
+            raceName: name,
+            raceDate: raceDate,
+            raceNotes: notes,
           }),
         });
         let resJson = await res.json();
-        if (res.status === 200) {
-          setRaceTable(<GetRaces2 race_cols={["id", "name", "race_date", "notes"]}
+        if (res.status === 201) {
+          setRaceTable(<GetRaces2 race_cols={["id", "raceName", "raceDate", "raceNotes"]}
             newRow={{"id": 9999, "record": [9999,name,raceDate,notes]}}
             maxRows={20}
             />);

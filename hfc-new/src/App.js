@@ -1,6 +1,7 @@
 import React from 'react';
 // import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { Redirect, Switch, BrowserRouter, Routes, Route, Router} from "react-router-dom";
+
 
 import HfcMain from './components/HfcMain'
 import Home from './pages/Home'

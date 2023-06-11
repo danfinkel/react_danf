@@ -16,7 +16,7 @@ export default function Home() {
                     <ExpandableSection expanded={false} sectiontitle="HFC At The Ramble"><Ramble2023Writeup /></ExpandableSection>
                 </div>
                 <div className="pure-u-1-3">
-                    <GetRaces2 race_cols={["name", "race_date"]} maxRows={10}/>
+                    <GetRaces2 race_cols={["raceName", "raceDate"]} maxRows={10}/>
                     <div className="content">
                         <h2 className="content-head">HFC Wow Moments</h2>
                     </div>
