@@ -5,17 +5,6 @@ export default function GetRaces2(props) {
     const [races, setRaces] = useState([])
     const [headers, setHeaders] = useState([])
 
-    // const fetchRacesData = () => {
-    //     fetch('http://localhost:3001/getRaces')
-    //       .then(response => {
-    //         return response.json()
-    //       })
-    //       .then(data => {
-    //         setRaces(data)
-    //         setHeaders(data.fields)
-    //       })
-    //   }
-
     const fetchRacesData = () => {
         fetch('http://localhost:3001/api/users/getRaces')
           .then(response => {

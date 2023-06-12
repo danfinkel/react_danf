@@ -21,7 +21,7 @@ function App() {
       if(!token) {
         return <Login setToken={setToken} />
       } else {
-        return <AddARace />
+        return <AddARace token={token} />
       }
     } 
 

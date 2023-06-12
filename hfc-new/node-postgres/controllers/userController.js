@@ -66,12 +66,12 @@ const login = async (req, res) => {
 
      if (isSame) {
        let token = jwt.sign({ id: user.id }, process.env.secretKey, {
-         expiresIn: 1 * 24 * 60 * 60 * 1000,
+         expiresIn: 1 * 24 * 60 * 60 * 1000 * 1000,
        });
 
        //if password matches wit the one in the database
        //go ahead and generate a cookie for the user
-       res.cookie("jwt", token, { maxAge: 1 * 24 * 60 * 60, httpOnly: true });
+       res.cookie("jwt", token, { maxAge: 1 * 24 * 60 * 60 * 1000 * 1000, httpOnly: true });
        console.log("user", JSON.stringify(user, null, 2));
        console.log(token);
        //send user data
@@ -90,11 +90,17 @@ const login = async (req, res) => {
  }
 };
 
+const logout = async (req, res) => {
+  res.clearCookie("jwt");
+  return res.status(201).send("User Logged Out")
+}
+
 const postRace = async (req, res) => {
   try {
 
-   const { raceName, raceDate, raceNotes } = req.body;
+   const { userName, raceName, raceDate, raceNotes } = req.body;
    const data = {
+     userName,
      raceName,
      raceDate,
      raceNotes,
@@ -130,5 +136,6 @@ module.exports = {
  signup,
  login,
  postRace,
- getRaces
+ getRaces,
+ logout
 };

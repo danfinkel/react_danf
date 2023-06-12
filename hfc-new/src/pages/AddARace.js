@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import GetRaces2 from 'content/UpcomingRaces2'
 import Login from 'pages/Login'
 
-export default function AddARace() {
+export default function AddARace({ token }) {
 
     const [name, setName] = useState("");
     const [raceDate, setRaceDate] = useState("");
@@ -21,6 +21,7 @@ export default function AddARace() {
               },
           credentials : 'include',
           body: JSON.stringify({
+            userName: token,
             raceName: name,
             raceDate: raceDate,
             raceNotes: notes,

@@ -41,15 +41,15 @@ app.use('/api/users', userRoutes)
 // app.options('/api/users/login', cors({origin: ['http://localhost:3000/']}))
 
 
-app.get('/getRaces', (req, res) => {
-  race_model.getRaces()
-  .then(response => {
-    res.status(200).json(response);
-  })
-  .catch(error => {
-    res.status(500).json(error);
-  })
-})
+// app.get('/getRaces', (req, res) => {
+//   race_model.getRaces()
+//   .then(response => {
+//     res.status(200).json(response);
+//   })
+//   .catch(error => {
+//     res.status(500).json(error);
+//   })
+// })
 
 
 app.delete('/race/:id', (req, res) => {

@@ -1,0 +1,72 @@
+-- notes for setting up pg db
+-- heavily inspired by 
+-- https://blog.logrocket.com/getting-started-with-postgres-in-your-react-app/
+
+-- init login is
+psql -d postgres
+
+-- create user
+CREATE ROLE my_user WITH LOGIN PASSWORD 'root';
+ALTER ROLE my_user CREATEDB;
+
+-- log out/back in with new user
+\q
+psql -d postgres -U my_user 
+
+-- create hfc db
+CREATE DATABASE hfc;
+
+-- log out/back into hfc db
+\q
+psql -d hfc -U my_user 
+
+
+-- create races table
+CREATE TABLE races( id SERIAL PRIMARY KEY, 
+                    name VARCHAR(30), 
+                    race_date date,
+                    notes VARCHAR(500) );
+
+-- insert some rows
+insert into races ("userName", "raceName", "raceDate", "raceNotes", "createdAt", "updatedAt") values ('tester', 'SRR Marathon Relay', date'2023-06-03', 'HFC Favorite', now(), now());
+insert into races ("userName", "raceName", "raceDate", "raceNotes", "createdAt", "updatedAt") values ('tester', 'Corrib Pub Classic', date'2023-06-04', '29th Running of a Boston Clasic', now(), now());
+insert into races ("userName", "raceName", "raceDate", "raceNotes", "createdAt", "updatedAt") values ('tester', 'Rally For Sally 4 Miler', date'2023-07-04', 'Great way to kick off the Holiday. In Dedham and typically well attended by HFC.', now(), now());
+
+
+-- list dbs
+\list
+
+-- list tables in our db
+\dt
+
+
+-- Next I created the node-progress folder
+mkdir node-postgres && cd node-postgres
+
+-- and used npm init to create package.json
+npm init
+
+-- had to install pg and express
+npm i express pg
+
+
+-- and created the two files 
+-- index.js and hfc_model.js
+
+-- some installs
+--Next, Install these packages
+--Express — Node.js framework npm install express
+--Sequelize — object-relational mapper for PostgreSQL npm install --save sequelize
+--Pg and pg-hstore — pg is a PostgreSQL client for Node.js and pg-hstore is a node package for serializing and deserializing JSON data to hstore format — npm install --save pg pg-hstore
+--Nodemon — Automatic restart of node application when file changes are detected — npm install –save-dev
+--Bcrypt — For password hashing => npm install bcrypt
+--Dotenv =>For access to your environment variable => npm install dotenv
+--JSON Web Token => For generating tokens => npm install jsonwebtoken
+--CookieParser => For setting cookies => npm install cookie-parser
+
+-- easy to start the server
+node index.js
+
+
+
+
